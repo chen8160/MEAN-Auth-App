@@ -31,6 +31,7 @@ app.use(cors());
 
 //Set static folder
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/gallery', express.static(path.join(__dirname, 'gallery')));
 
 //Body Parser Middleware
 app.use(bodyParser.json());
